@@ -117,7 +117,7 @@ saveGIF({
     E(g)$color <- colors[round(E(g)$width) + 1]
     
     # Set vertice attributes
-    V(g)$label.cex <- 0.8
+    V(g)$label.cex <- 2
     V(g)$label.family <- "sans"
     V(g)$label.color <- "white"
     V(g)$color <- rgb(8, 104, 172, maxColorValue = 255)
@@ -130,14 +130,14 @@ saveGIF({
     
     # plot
     plot(g, layout = layout.circle)
-    title(main = paste("Weighted Network Graph of Bilateral Migration Flows", year.list[i], sep = ", "))}
+    title(main = paste("Weighted Network Graph of Bilateral Migration Flows", year.list[i], sep = ", "), cex.main = 2)}
     # alternative plots
     #plot(g, layout = layout.fruchterman.reingold(g, niter = 1000, 
     #                                              area = 50*vcount(g)^2.8, 
     #                                              repulserad = 50*vcount(g)^3))
   }, 
         movie.name = "bilateral flows, 1960-2000.gif", 
-        ani.width = 1000, 
-        ani.height = 1000,
+        ani.width = 1500, 
+        ani.height = 1500,
         loop = TRUE,
         outdir = getwd())
