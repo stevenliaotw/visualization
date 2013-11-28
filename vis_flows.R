@@ -48,10 +48,10 @@ for (i in 1:4) {
   # style based on Gabriel J. Michael's visualization of Trans-Pacific Partnership (TPP) agreements. Thanks, Gabriel!
   # see http://topromotetheprogress.wordpress.com/2013/11/17/visualizing-negotiating-positions-in-the-tpp-ip-chapter/
   # set edge attributes
-  E(g)$width <- rank(E(g)$weight)/10
+  E(g)$width <- rank(E(g)$weight)/7
   E(g)$curved <- 0.2
   # set color palette
-  colors <- heat.colors(max(rank(E(g)$weight)/10) + 2)
+  colors <- heat.colors(max(rank(E(g)$weight)/7) + 2)
   # reverse color order
   colors <- rev(colors)
   E(g)$color <- colors[round(E(g)$width) + 1]
@@ -108,10 +108,10 @@ saveGIF({
     # style based on Gabriel J. Michael's visualization of Trans-Pacific Partnership (TPP) agreements. Thanks, Gabriel!
     # see http://topromotetheprogress.wordpress.com/2013/11/17/visualizing-negotiating-positions-in-the-tpp-ip-chapter/
     # set edge attributes
-    E(g)$width <- rank(E(g)$weight)/10
+    E(g)$width <- (rank(E(g)$weight)/7)
     E(g)$curved <- 0.2
     # set color palette
-    colors <- heat.colors(max(rank(E(g)$weight)/10) + 2)
+    colors <- heat.colors(max(rank(E(g)$weight)/7) + 2)
     # reverse color order
     colors <- rev(colors)
     E(g)$color <- colors[round(E(g)$width) + 1]
