@@ -136,7 +136,7 @@ saveGIF({
     #                                              area = 50*vcount(g)^2.8, 
     #                                              repulserad = 50*vcount(g)^3))
   }, 
-        movie.name = "bilateral-flows-1960-2000.gif", 
+        movie.name = "bilateral flows, 1960-2000.gif", 
         ani.width = 1500, 
         ani.height = 1500,
         loop = TRUE,
